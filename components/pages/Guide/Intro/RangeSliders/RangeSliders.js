@@ -7,8 +7,8 @@ const RangeSliders = ({ data }) => {
         {data?.length > 0 && (
             <div className={classes.RangeSliders}>
                 {data.map((item) => (
-                    <div className={classes.Item}>
-                      <RangeSlider key={item.id} title={item.title}/>
+                    <div className={classes.Item} key={item.id}>
+                      <RangeSlider title={item.title}/>
                     </div>
                 ))}
             </div>
