@@ -37,6 +37,10 @@
         max-width: 570px;
         margin-left: -56px;
     }
+
+    a{
+        text-decoration: none;
+    }
 }
 
 .Logo {
@@ -118,6 +122,19 @@
     border: 1px solid #d9dbe9;
     border-radius: 12px;
     overflow: hidden;
+
+    .Label {
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        transform: translateY(-50%);
+        display: block;
+        font-size: 16px;
+        line-height: 28px;
+        color: #a0a3bd;
+        pointer-events: none;
+        transition: 0.5s;
+    }
 }
 
 .SubscribeInput {
@@ -128,14 +145,20 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 15px;
-    color: #a0a3bd;
+    color: #14142B;
     padding-left: 18px;
 
-    &::placeholder {
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 15px;
-        color: #a0a3bd;
+    &:focus + label,
+    &:not(:placeholder-shown) + label {
+        top: 18px;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    &:focus,&:not(:placeholder-shown){
+        padding-top: 29px;
+        line-height: 16px;
+        padding-bottom: 12px;
     }
 }
 
@@ -412,6 +435,10 @@
         overflow: visible;
         height: auto;
         border: none;
+
+        .Label {
+            transform: translateY(-145%);
+        }
     }
 
     .SubscribeInput {
@@ -421,6 +448,11 @@
         border-radius: 10px;
         margin-bottom: 8px;
         padding-left: 20px;
+
+        &:focus + label,
+        &:not(:placeholder-shown) + label {
+            top: 40px;
+        }
     }
 
     .SubscribeBtnSubmit {

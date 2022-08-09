@@ -41,7 +41,7 @@ export const mockData = {
     mapTag: 'Кипр, Кирения, Чаталкой ',
     title: 'Вилла 3+1 160 м2',
     btnTitle: 'Отправить заявку',
-    price: '16 802',
+    price: '16 802 ₽',
     bell: 'узнать об изменении цены',
     benefits: [
         {

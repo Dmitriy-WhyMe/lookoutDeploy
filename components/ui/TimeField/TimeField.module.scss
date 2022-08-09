@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 
     input[type='time']::-webkit-calendar-picker-indicator {
         background: none;
@@ -12,15 +13,12 @@
 }
 
 .Label {
-    position: absolute;
-    top: 0;
-    left: 5px;
     display: block;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba(#6e6259, 0.6);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #A0A3BD;
     pointer-events: none;
-    margin-bottom: 5px;
     transition: 0.5s;
 }
 
@@ -33,23 +31,29 @@
 
 .TimeItem {
     position: relative;
-    width: 158px;
-    border-bottom: 1px solid rgba(#6e6259, 0.3);
-
+    
     input {
-        border: none;
-        color: rgba(#6e6259, 0.6);
-        padding: 0 0 6px 0;
+        border: 1px solid #D9DBE9;
+        color: #14142B;
+        padding: 0 0 0 20px;
+        height: 64px;
+        width: 174px;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
     }
 
     &:first-child {
-        margin-right: 30px;
+        margin-right: 20px;
     }
 
     svg {
         position: absolute;
-        right: 0;
+        right: 20px;
         top: 0;
+        bottom: 0;
+        margin: auto;
         opacity: 0.5;
         width: 14px;
         height: 12px;

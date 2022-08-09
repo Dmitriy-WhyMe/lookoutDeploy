@@ -7,6 +7,7 @@ import { TextField } from '../../ui/TextField/TextField'
 import FormModal from './../../ui/FormModal/FormModal'
 import { useRouter } from 'next/router'
 import { TextArea } from '../../ui/TextArea/TextArea'
+import { Button } from '../../ui/Button/Button'
 
 function RequestForm({ siteTitle }) {
     const router = useRouter()
@@ -69,7 +70,7 @@ function RequestForm({ siteTitle }) {
 
     return (
         <FormModal
-            title='Отправка запроса'
+            title='Оставить заявку'
             onSubmit={handleSubmit}
             onCloseModal={onCloseModal}
             isLoading={isLoading}
@@ -93,15 +94,6 @@ function RequestForm({ siteTitle }) {
                 onChange={(e) => onChangeFormData('phone', e.currentTarget.value)}
                 errorText='Введите номер телефона'
                 isError={formErrors.phone && !formData.phone}
-                required
-            />
-
-            <TextField
-                className={classes.TextField}
-                name='email'
-                label='email'
-                value={formData.email}
-                onChange={(e) => onChangeFormData('email', e.currentTarget.value)}
             />
 
             <TextArea
@@ -111,18 +103,6 @@ function RequestForm({ siteTitle }) {
                 value={formData.message}
                 onChange={(e) => onChangeFormData('message', e.currentTarget.value)}
             />
-
-            <p className={classes.Info}>
-                Интересует более подробная информация <br /> по планировкам в ЖК CHAMPINE
-            </p>
-
-            <p className={classes.Policy}>
-                Нажимая на кнопку «Отправить», вы ознакомлены и соглашаетесь <br /> с
-                <a href='/politika_konfidencialnosti.pdf' target='_blank' rel='noopener noreferrer'>
-                    {' '}
-                    политикой обработки персональных данных
-                </a>
-            </p>
         </FormModal>
     )
 }

@@ -73,7 +73,7 @@ function CallForm({ siteTitle }) {
 
     return (
         <FormModal
-            title='Отправка запроса'
+            title='Заказать звонок'
             onSubmit={handleSubmit}
             onCloseModal={onCloseModal}
             isLoading={isLoading}
@@ -110,22 +110,10 @@ function CallForm({ siteTitle }) {
             <TextArea
                 className={classes.TextArea}
                 name='message'
-                label={'Сообщение'}
+                label={'Коментарий к заявке'}
                 value={formData.message}
                 onChange={(e) => onChangeFormData('message', e.currentTarget.value)}
             />
-
-            <p className={classes.Info}>
-                Интересует более подробная информация <br /> по планировкам в ЖК CHAMPINE
-            </p>
-
-            <p className={classes.Policy}>
-                Нажимая на кнопку «Отправить», вы ознакомлены и соглашаетесь <br /> с
-                <a href='/politika_konfidencialnosti.pdf' target='_blank' rel='noopener noreferrer'>
-                    {' '}
-                    политикой обработки персональных данных
-                </a>
-            </p>
         </FormModal>
     )
 }

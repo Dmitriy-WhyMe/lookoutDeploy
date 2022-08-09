@@ -54,10 +54,12 @@ function Subscribe({ siteTitle }) {
                     <input
                         className={classes.Input}
                         type='text'
+                        name="name"
                         value={email}
+                        placeholder=' '
                         onChange={(e) => setEmail(e.currentTarget.value)}
-                        placeholder={mockData.placeholder}
                     />
+                    <label className={classes.Label} htmlFor="name">{mockData.placeholder}</label>
 
                     <Button className={classes.BtnSubmit} onClick={handleSubmit}>
                         {mockData.btnSubmit}

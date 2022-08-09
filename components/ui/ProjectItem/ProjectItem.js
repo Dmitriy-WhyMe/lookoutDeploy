@@ -10,39 +10,40 @@ function ProjectItem({ item }) {
     const sizePhoto = getPhotoSize(width)
 
     return (
-        <div className={classes.Item}>
-            {item?.photo && item?.photo?.[1920] && (
-                <div className={classes.ItemImage}>
-                    <NextImage
-                        src={item?.photo?.[sizePhoto] || item.photo[1920]}
-                        layout='fill'
-                        objectFit='cover'
-                        alt=''
-                        quality={95}
-                        priority
-                    />
-                </div>
-            )}
-
-            <div className={classes.ItemContent}>
-                {item?.name && <div className={classes.ItemName} dangerouslySetInnerHTML={{ __html: item.name }} />}
-
-                <div className={classes.ItemFooter}>
-                    <div className={classes.ItemLots}>
-                        {item?.lotsCount && <b>{item.lotsCount}</b>}
-                        {item?.lotsName && <span>{item.lotsName}</span>}
+        <Link href={item.link}>
+            <div className={classes.Item}>
+                {item?.photo && item?.photo?.[1920] && (
+                    <div className={classes.ItemImage}>
+                        <NextImage
+                            src={item?.photo?.[sizePhoto] || item.photo[1920]}
+                            layout='fill'
+                            objectFit='cover'
+                            alt=''
+                            quality={95}
+                            priority
+                        />
                     </div>
+                )}
 
-                    {item?.link && (
-                        <Link href={item.link}>
+                <div className={classes.ItemContent}>
+                    {item?.name && <div className={classes.ItemName} dangerouslySetInnerHTML={{ __html: item.name }} />}
+
+                    <div className={classes.ItemFooter}>
+                        <div className={classes.ItemLots}>
+                            {item?.lotsCount && <b>{item.lotsCount}</b>}
+                            {item?.lotsName && <span>{item.lotsName}</span>}
+                        </div>
+
+                        {item?.link && (
                             <a className={classes.ItemLink} target='_blank' rel='noopener noreferrer'>
                                 <IconArrowRight />
                             </a>
-                        </Link>
-                    )}
+                        )}
+                    </div>
                 </div>
             </div>
-        </div>
+        </Link>
+        
     )
 }
 

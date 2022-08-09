@@ -22,7 +22,7 @@ export const mockData = {
             area: '160 м2',
             terrace: '45 м2',
             section: '420 м2',
-            price: '16 802',
+            price: '16 802 ₽',
             currency: [
                 { value: '1', label: 'Руб' },
                 { value: '2', label: 'USD' },
@@ -39,7 +39,7 @@ export const mockData = {
             area: '160 м2',
             terrace: '45 м2',
             section: '420 м2',
-            price: '16 802',
+            price: '16 802 ₽',
             currency: [
                 { value: '1', label: 'Руб' },
                 { value: '2', label: 'USD' },
@@ -56,7 +56,7 @@ export const mockData = {
             area: '160 м2',
             terrace: '45 м2',
             section: '420 м2',
-            price: '16 802',
+            price: '16 802 ₽',
             currency: [
                 { value: '1', label: 'Руб' },
                 { value: '2', label: 'USD' },
@@ -73,7 +73,7 @@ export const mockData = {
             area: '160 м2',
             terrace: '45 м2',
             section: '420 м2',
-            price: '16 802',
+            price: '16 802 ₽',
             currency: [
                 { value: '1', label: 'Руб' },
                 { value: '2', label: 'USD' },
@@ -90,7 +90,7 @@ export const mockData = {
             area: '160 м2',
             terrace: '45 м2',
             section: '420 м2',
-            price: '16 802',
+            price: '16 802 ₽',
             currency: [
                 { value: '1', label: 'Руб' },
                 { value: '2', label: 'USD' },
@@ -107,7 +107,7 @@ export const mockData = {
             area: '160 м2',
             terrace: '45 м2',
             section: '420 м2',
-            price: '16 802',
+            price: '16 802 ₽',
             currency: [
                 { value: '1', label: 'Руб' },
                 { value: '2', label: 'USD' },

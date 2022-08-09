@@ -11,7 +11,7 @@ import Interested from '../components/pages/Lot/Interested/Interested'
 
 export default function Guide() {
     return (
-        <Layout title='Страница гида с поисковой выдачей проектов - Кипр' description='Страница гида с поисковой выдачей проектов - Кипр'>
+        <Layout title='Страница лота-Кипр' description='Страница лота-Кипр'>
             <TopBlock />
             <Slider />
             <Description />

@@ -61,7 +61,7 @@ function Top({ data }) {
                             <SelectCustom
                                 className={classes.ControlSelect}
                                 options={data.citys}
-                                placeholder={'Город'}
+                                placeholder={'Страна'}
                                 onChangeFilter={onChangeFilter}
                                 onChange={(obj) => onChangeFilter('city', obj)}
                             />

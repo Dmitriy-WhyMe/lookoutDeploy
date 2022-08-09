@@ -12,10 +12,19 @@ function FormModal({ title, onSubmit, onCloseModal, isLoading, children, isSucce
                     <div className={classes.Form}>
                         {children}
 
-                        <div className={classes.BtnSubmit}>
-                            <Button onClick={onSubmit} type='submit' disabled={isLoading} dark>
-                                Отправить
-                            </Button>
+                        <div className={classes.Row}>
+                            <p className={classes.Policy}>
+                            Нажимая на кнопку «Отправить», я даю свое<br />
+                                <a href='/politika_konfidencialnosti.pdf' target='_blank' rel='noopener noreferrer'>
+                                    {' '}
+                                    согласие на обработку персональных данных
+                                </a>
+                            </p>
+                            <div className={classes.BtnSubmit}>
+                                <Button onClick={onSubmit} type='submit' disabled={isLoading} dark>
+                                    Отправить
+                                </Button>
+                            </div>
                         </div>
                     </div>
                 </div>

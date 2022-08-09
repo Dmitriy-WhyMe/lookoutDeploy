@@ -2,7 +2,7 @@ export const mockData = {
     languages: [
         { value: '1', label: 'Русский' },
         { value: '2', label: 'Английский' },
-        { value: '3', label: 'Турецкий' }
+
     ],
 
     citys: [

@@ -108,10 +108,15 @@ function Footer() {
 
                     <div className={classes.Row}>
                         <div className={classes.Col}>
-                            <div className={classes.Author}>
-                                <p>Разработка сайта</p>
-                                <IconLogoAuthor />
-                            </div>
+                            <Link href="https://d-c.agency">
+                                <a target="_blank">
+                                    <div className={classes.Author}>
+                                        <p>Разработка сайта</p>
+                                    <IconLogoAuthor />
+                                    </div>
+                                </a>
+                            </Link>
+                            
                         </div>
 
                         <div className={`${classes.Col} ${classes.Center}`}>
@@ -128,9 +133,11 @@ function Footer() {
                                         className={classes.SubscribeInput}
                                         type='text'
                                         value={email}
+                                        name="name"
+                                        placeholder=' '
                                         onChange={(e) => setEmail(e.currentTarget.value)}
-                                        placeholder={mockData.subscribe.placeholder}
                                     />
+                                    <label className={classes.Label} htmlFor="name">{mockData.subscribe.placeholder}</label>
 
                                     <Button className={classes.SubscribeBtnSubmit}>{mockData.subscribe.btnSend}</Button>
                                 </div>

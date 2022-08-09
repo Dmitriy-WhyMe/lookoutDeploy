@@ -35,16 +35,43 @@
 
 .Form {
     width: 100%;
-    max-width: 550px;
+    max-width: 510px;
     margin: 0 auto;
 }
 
-.BtnSubmit {
-    display: flex;
-    justify-content: center;
 
-    button {
-        min-width: 236px;
+.Policy {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #A0A3BD;
+
+    a{
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+        color: #14142B;
+        transition: all 0.2s ease;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.Row{
+    margin-top: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .BtnSubmit{
+        max-width: 146px;
+
+        button{
+            height: 56px;
+            min-width: 146px;
+        }
     }
 }
 

@@ -32,7 +32,7 @@ export const mockData = {
         rooms: '4',
         trim: 'с отделкой',
         furniture: 'с мебелью',
-        price: '16 802',
+        price: '16 802 ₽',
 
         currency: [
             { value: '1', label: 'Руб' },

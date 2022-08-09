@@ -27,7 +27,7 @@ export const mockData = {
 
     filter: [
         {
-            name: 'Покупка',
+            name: 'Все',
             code: 'purchase',
             items: [
                 {

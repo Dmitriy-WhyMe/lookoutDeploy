@@ -14,6 +14,7 @@ export const TextField = ({ name, type = 'text', label, value, onChange, placeho
                 value={value}
                 onChange={onChange}
                 placeholder={placeholder}
+                required
             />
 
             <label className={classes.Label} htmlFor={name}>{label}</label>
