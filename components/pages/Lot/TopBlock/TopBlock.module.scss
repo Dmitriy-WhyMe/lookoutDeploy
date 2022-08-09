@@ -85,6 +85,19 @@
     }
 
     .Price{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        p{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 170%;
+            color: #14142B;
+        }
+        
 
         button{
             max-width: 74px;

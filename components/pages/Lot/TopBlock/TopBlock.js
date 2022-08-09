@@ -38,6 +38,7 @@ const TopBlock = () => {
 				<div className={classes.RowThree}>
 					<h3>{mockData.title}</h3>
 					<div className={classes.Price}>
+						{mockData?.price && <p>{mockData.price}</p>}
 						{mockData?.currency?.length > 0 && (
                             <SelectCustom
                                 className={`${classes.ControlSelect} ${classes.Currency}`}
