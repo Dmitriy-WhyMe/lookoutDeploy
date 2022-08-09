@@ -1,0 +1,126 @@
+.Privacy {
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 118px 20px 74px 20px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #6e6259;
+
+    h2 {
+        margin: 0 0 49px 0;
+        padding: 0;
+        font-size: 34px;
+        line-height: 44px;
+        color: #6e6259;
+        font-weight: normal;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    h3 {
+        margin: 73px 0 21px 0;
+        padding: 0;
+        font-size: 22px;
+        line-height: 33px;
+        color: #6e6259;
+        font-weight: bold;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    p {
+        margin: 20px 0 20px 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        li {
+            margin: 20px 0 0 0;
+            padding: 0 0 0 0;
+            position: relative;
+
+            &:before {
+                content: '';
+                background: rgba(#6e6259, 0.7);
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                position: absolute;
+                top: 11px;
+                left: -14px;
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 711px) {
+    .Privacy {
+        padding: 85px 20px 35px 20px;
+        font-size: 16px;
+        line-height: 24px;
+
+        h2 {
+            margin: 0 0 19px 0;
+            padding: 0;
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        h3 {
+            margin: 31px 0 11px 0;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        p {
+            margin: 11px 0 20px 0;
+        }
+
+        ul {
+            li {
+                &:before {
+                    width: 5px;
+                    height: 5px;
+                    top: 11px;
+                    left: -11px;
+                }
+            }
+        }
+    }
+}

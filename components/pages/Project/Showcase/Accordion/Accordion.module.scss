@@ -1,0 +1,192 @@
+@import "../../../../../css/common";
+
+.Accordion{
+    border-top: 1px solid #D9DBE9;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+    max-width: 100%;
+    width: 100%;
+
+    h2{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 130%;
+        color: #14142B;
+        margin-bottom: 30px;
+    }
+
+    .Item{
+        border-bottom: 1px solid #D9DBE9;
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+    .TitleItem{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 100%;
+        color: #14142B;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        
+    }
+    
+    .SubContainerText{
+        padding-top: 26px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 170%;
+        color: #14142B;
+    }
+
+    .TitleWrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .Arrow{
+        position: relative;
+        border-radius: 100%;
+        background: inherit;
+        width: 14px;
+        height: 14px;
+        transition: all 0.2s ease;
+        &[data-active="Y"] {
+            background: #F9365E;
+            border: 2px solid #F9365E;
+            transition: all 0.2s ease;
+            transform: rotate(-90deg);
+            &::after{
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                content: '';
+                width: 14px;
+                height: 2px;
+                background: white;
+                transform: rotate(-90deg);
+            }
+        }
+        &::after{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            content: '';
+            width: 14px;
+            height: 2px;
+            background: #F9365E;
+        }
+        &::before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            content: '';
+            width: 14px;
+            height: 2px;
+            background: #F9365E;
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+.Collumn{
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    .Row{
+        height: 23px;
+        display: flex;
+        align-items: center;
+        input[type="checkbox"]{
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+        input[type="checkbox"]:checked + label, 
+        input[type="checkbox"]:not(:checked) + label{
+            display: flex;
+            position: relative;
+            padding-left: 40px;
+            cursor: pointer;
+        }
+        input[type="checkbox"]:checked + label:before, 
+        input[type="checkbox"]:not(:checked) + label:before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 22px;
+            height: 22px;
+            border: 2px solid #F9365E;
+            background-color: inherit;
+            border-radius: 100%;
+            transition: all 0.2s ease;
+        }
+
+        input[type="checkbox"]:checked + label:before, 
+        input[type="checkbox"]:not(:checked) + label:before {
+            border-radius: 100%;
+        }
+
+        input[type="checkbox"]:checked + label:after, 
+        input[type="checkbox"]:not(:checked) + label:after{
+            content: "";
+            position: absolute;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        input[type="checkbox"]:checked + label:after, 
+        input[type="checkbox"]:not(:checked) + label:after {
+            left: 7.5px;
+            top: 9px;
+            width: 12px;
+            height: 9px;
+            background-repeat: no-repeat;
+            background-image: url("../mockImages/icoInput.svg");
+        }
+
+        input[type="checkbox"]:checked + label:before{
+            transition: all 0.2s ease;
+            background-color: red;
+        }
+
+        input[type="checkbox"]:not(:checked) + label:after {
+            opacity: 0;
+        }
+
+        input[type="checkbox"]:checked + label:after{
+            opacity: 1;
+        }
+        label{
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            color: #14142B;
+            min-height: 30px;
+            align-items: center;
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@import '../../../css/common.scss';
+
+.Quantity {
+    display: flex;
+    align-items: center;
+    margin-right: 38px;
+}
+
+.QuantityCurrent {
+    position: relative;
+    height: 13px;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+}
+
+.QuantityNumbersFirst {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.QuantityNumbers {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.QuantityNumber {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    transition: all 0.2s ease;
+}
+
+.QuantityLine {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 13px;
+    min-height: 1px;
+    background: #000;
+    opacity: 0.2;
+    margin: 0 4px;
+}
+
+.QuantitAll {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #000;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: $mobile) {
+    .Quantity {
+        margin-right: 0;
+    }
+}

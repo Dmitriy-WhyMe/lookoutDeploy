@@ -1,0 +1,265 @@
+@import '../../../../css/common.scss';
+
+.Top {
+    width: 100%;
+    max-width: 1280px;
+    min-height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.Col {
+    display: flex;
+    align-items: center;
+}
+
+.Logo {
+    margin-right: 58px;
+}
+
+.Control {
+    display: flex;
+    align-items: center;
+}
+
+.ControlSelect {
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    &.Currency {
+        button {
+            min-width: 82px;
+        }
+    }
+}
+
+.Address {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #a0a3bd;
+
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.PhoneBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 30px;
+}
+
+.Phone {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #14142b;
+    margin-bottom: 6px;
+    text-decoration: none;
+}
+
+.Call {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #f9365e;
+}
+
+.BtnPopup {
+    padding: 0;
+    height: 50px;
+    min-width: 200px;
+}
+
+.Burger {
+    position: relative;
+    width: 33px;
+    height: 18px;
+    cursor: pointer;
+    display: none;
+
+    &.Active {
+        .BurgerLine {
+            &:nth-child(1) {
+                transform: translateY(8px) rotate(-45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(-8px) rotate(45deg);
+            }
+        }
+    }
+}
+
+.BurgerLine {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #1d1d41;
+    transition: all 0.3s ease;
+
+    &:nth-child(1) {
+        top: 0;
+        left: 0;
+    }
+
+    &:nth-child(2) {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:nth-child(3) {
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.BtnSearch {
+    display: none;
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .Top {
+        max-width: 1446px;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Top {
+        padding: 0 62px;
+    }
+
+    .Logo {
+        margin-right: 60px;
+    }
+
+    .Address {
+        display: none;
+    }
+
+    .PhoneBlock {
+        margin-right: 20px;
+    }
+
+    .Phone {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .Call {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .BtnPopup {
+        min-width: 166px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Top {
+        padding: 0 54px;
+    }
+
+    .Logo {
+        margin-top: -10px;
+        margin-right: 40px;
+    }
+
+    .Control {
+        display: none;
+    }
+
+    .Address {
+        display: none;
+    }
+
+    .PhoneBlock {
+        display: none;
+    }
+
+    .BtnPopup {
+        min-width: 166px;
+    }
+
+    .Burger {
+        display: block;
+        margin-right: 52px;
+    }
+
+    .BtnSearch {
+        display: flex;
+        min-width: auto;
+        width: 50px;
+        height: 50px;
+        font-size: 0;
+        line-height: 0;
+        border-radius: 50%;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Top {
+        position: relative;
+        min-height: 80px;
+        padding: 0 30px;
+    }
+
+    .Logo {
+        width: 85px;
+        height: 41px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .Control {
+        display: none;
+    }
+
+    .Address {
+        display: none;
+    }
+
+    .PhoneBlock {
+        display: none;
+    }
+
+    .BtnPopup {
+        display: none;
+    }
+
+    .Burger {
+        display: block;
+        margin-right: 0;
+    }
+
+    .BtnSearch {
+        display: flex;
+        min-width: auto;
+        min-height: auto;
+        width: 40px;
+        height: 40px;
+        font-size: 0;
+        line-height: 0;
+        border-radius: 50%;
+        margin-left: 0;
+    }
+}

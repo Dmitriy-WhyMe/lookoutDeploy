@@ -1,0 +1,37 @@
+@import '../../../css/common.scss';
+
+.Container {
+    width: 100%;
+    max-width: 1122px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    &.FullHeight {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .Container {
+        max-width: 1260px;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Container {
+        max-width: 727px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Container {
+        max-width: 415px;
+        padding: 0 30px;
+    }
+}

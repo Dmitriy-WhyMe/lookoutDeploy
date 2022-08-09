@@ -1,0 +1,339 @@
+@import '../../../../../css/common.scss';
+
+.Filter {
+    margin-bottom: 38px;
+}
+
+.Header {
+    width: auto;
+    height: 46px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 14px 14px 0 0;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(40px);
+    overflow: hidden;
+}
+
+.HeaderInner {
+    height: 100%;
+}
+
+.HeaderBtn {
+    height: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    padding: 0 34px;
+
+    &.Active {
+        background-color: #fff;
+        color: #f9365e;
+        font-weight: 700;
+    }
+}
+
+.Items {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.04);
+    border-radius: 0px 14px 14px 14px;
+}
+
+.Select {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    &:not(:last-child) {
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 48px;
+            width: 1px;
+            background-color: #d9dbe9;
+        }
+    }
+
+    &:first-child {
+        .SelectBtn {
+            padding-left: 34px;
+        }
+    }
+
+    &:last-child {
+        .SelectBtn {
+            padding-right: 34px;
+        }
+    }
+}
+
+.SelectBtn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #a0a3bd;
+    white-space: nowrap;
+    padding: 0 28px;
+
+    svg {
+        margin-left: 20px;
+    }
+}
+
+.SelectDropdown {
+    position: relative;
+    z-index: 2;
+
+    display: none;
+
+    &.Open {
+        display: block;
+        background-color: aqua;
+    }
+}
+
+.SelectVariant {
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .Select {
+        &:first-child {
+            .SelectBtn {
+                padding-left: 42px;
+            }
+        }
+
+        &:last-child {
+            .SelectBtn {
+                padding-right: 42px;
+            }
+        }
+    }
+
+    .SelectBtn {
+        padding: 0 35px;
+        white-space: nowrap;
+
+        svg {
+            margin-left: 30px;
+        }
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Filter {
+        max-width: 660px;
+        margin-bottom: 30px;
+    }
+
+    .Items {
+        position: relative;
+        height: auto;
+        flex-wrap: wrap;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 54px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: calc(100% - 40px);
+            background-color: #d9dbe9;
+        }
+    }
+
+    .Select {
+        width: 100%;
+        max-width: 33.333333%;
+        height: 54px;
+
+        &:first-child {
+            .SelectBtn {
+                padding-left: 20px;
+            }
+        }
+
+        &:last-child {
+            .SelectBtn {
+                padding-right: 20px;
+            }
+        }
+
+        &:nth-child(3n) {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .SelectBtn {
+        width: 100%;
+        justify-content: space-between;
+        white-space: nowrap;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Filter {
+        max-width: 660px;
+        margin-bottom: 30px;
+    }
+
+    .HeaderBtn {
+        padding: 0 20px;
+    }
+
+    .Items {
+        position: relative;
+        height: auto;
+        flex-wrap: wrap;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 54px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: calc(100% - 40px);
+            background-color: #d9dbe9;
+        }
+    }
+
+    .Select {
+        width: 100%;
+        max-width: 33.333333%;
+        height: 54px;
+
+        &:first-child {
+            .SelectBtn {
+                padding-left: 20px;
+            }
+        }
+
+        &:last-child {
+            .SelectBtn {
+                padding-right: 20px;
+            }
+        }
+
+        &:nth-child(3n) {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .SelectBtn {
+        width: 100%;
+        justify-content: space-between;
+        white-space: nowrap;
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Filter {
+        margin-bottom: 20px;
+    }
+
+    .Header {
+        height: 50px;
+        width: calc(100% + 60px);
+        margin-bottom: 30px;
+        border-radius: 0;
+        overflow: scroll;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        margin-left: -30px;
+    }
+
+    .HeaderInner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .HeaderBtn {
+        height: 100%;
+        padding: 0 16px;
+
+        &.Active {
+            border-radius: 6px;
+        }
+    }
+
+    .ItemsWrap {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .Items {
+        height: auto;
+        flex-wrap: wrap;
+        background-color: transparent;
+    }
+
+    .Select {
+        width: 100%;
+        max-width: calc(50% - 10px);
+        height: 40px;
+        background-color: #fff;
+        border-radius: 10px;
+
+        margin-left: 5px;
+        margin-right: 5px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &:first-child {
+            width: 100%;
+            max-width: none;
+
+            .SelectBtn {
+                padding-left: 20px;
+            }
+        }
+
+        &:last-child {
+            width: 100%;
+            max-width: none;
+
+            .SelectBtn {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    .SelectBtn {
+        width: 100%;
+        max-width: none;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        svg {
+            margin-left: 0;
+        }
+    }
+}

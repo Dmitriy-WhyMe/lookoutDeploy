@@ -1,0 +1,105 @@
+@import "../../../../../css/common";
+
+.Accordion{
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 516px;
+
+    h2{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 130%;
+        color: #14142B;
+        margin-bottom: 30px;
+    }
+
+    .Item{
+        border-bottom: 1px solid #D9DBE9;
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+    .TitleItem{
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 100%;
+        color: #14142B;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        
+    }
+    
+    .SubContainerText{
+        padding-top: 26px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 170%;
+        color: #14142B;
+    }
+
+    .TitleWrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .Arrow{
+        position: relative;
+        border-radius: 100%;
+        border: 2px solid #D9DBE9;
+        background: inherit;
+        width: 42px;
+        height: 42px;
+        transition: all 0.2s ease;
+        &[data-active="Y"] {
+            background: #F9365E;
+            border: 2px solid #F9365E;
+            transition: all 0.2s ease;
+            transform: rotate(-90deg);
+            &::after{
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                content: '';
+                width: 14px;
+                height: 2px;
+                background: white;
+                transform: rotate(-90deg);
+            }
+        }
+        &::after{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            content: '';
+            width: 14px;
+            height: 2px;
+            background: #F9365E;
+        }
+        &::before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            content: '';
+            width: 14px;
+            height: 2px;
+            background: #F9365E;
+            transform: rotate(-90deg);
+        }
+    }
+}

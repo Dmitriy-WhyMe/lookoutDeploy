@@ -1,0 +1,177 @@
+@import '../../../../css/common.scss';
+
+.Section {
+    background: linear-gradient(0deg, #f7f7fc, #f7f7fc), linear-gradient(260.09deg, #fbfbff -17.76%, #eff0f6 102.84%);
+    padding: 106px 0;
+}
+
+.Inner {
+    display: flex;
+}
+
+.Photo {
+    margin-right: 102px;
+    padding-top: 146px;
+}
+
+.PhotoSquare {
+    position: relative;
+    z-index: 0;
+    width: 407px;
+    height: 416px;
+}
+
+.PhotoSquareInner {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(83.54deg, #02025a -14.06%, #5757c9 109.2%);
+    border-radius: 57px;
+}
+
+.PhotoSquareDecor {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 30px;
+    left: -30px;
+    border: 1px solid #d9dbe9;
+    border-radius: 57px;
+}
+
+.Piople {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 524px;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .Inner {
+        width: 100%;
+        max-width: 1118px;
+        padding-left: 30px;
+        margin: 0 auto;
+    }
+
+    .Photo {
+        margin-right: 170px;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Section {
+        padding: 80px 0;
+    }
+
+    .Inner {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Photo {
+        padding-top: 26px;
+        margin-right: 0;
+    }
+
+    .PhotoSquare {
+        width: 286px;
+        height: 292px;
+    }
+
+    .PhotoSquareInner {
+        border-radius: 40px;
+    }
+
+    .PhotoSquareDecor {
+        top: 20px;
+        left: -20px;
+    }
+
+    .Piople {
+        height: 370px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Section {
+        padding-top: 162px;
+        padding-bottom: 60px;
+    }
+
+    .Inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Photo {
+        padding-top: 0;
+        margin-right: 0;
+        margin-bottom: 56px;
+    }
+
+    .PhotoSquare {
+        width: 322px;
+        height: 328px;
+    }
+
+    .PhotoSquareInner {
+        border-radius: 45px;
+    }
+
+    .PhotoSquareDecor {
+        top: 24px;
+        left: -24px;
+    }
+
+    .Piople {
+        height: 414px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Section {
+        padding-top: 120px;
+        padding-bottom: 50px;
+    }
+
+    .Inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Photo {
+        padding-top: 0;
+        margin-right: 0;
+        margin-bottom: 60px;
+        padding-left: 20px;
+    }
+
+    .PhotoSquare {
+        width: 262px;
+        height: 268px;
+    }
+
+    .PhotoSquareInner {
+        border-radius: 45px;
+    }
+
+    .PhotoSquareDecor {
+        top: 20px;
+        left: -20px;
+    }
+
+    .Piople {
+        height: 338px;
+    }
+}

@@ -1,0 +1,284 @@
+@import '../../../../css/common.scss';
+
+.Section {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(83.54deg, #02025a -14.06%, #5757c9 109.2%);
+}
+
+.Inner {
+    text-align: center;
+}
+
+.Title {
+    max-width: 545px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #fff;
+    margin-bottom: 48px;
+}
+
+.Field {
+    position: relative;
+    height: 64px;
+    width: 100%;
+    max-width: 510px;
+    background: #ffffff;
+    border: 1px solid #d9dbe9;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.Input {
+    border: none;
+
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #a0a3bd;
+    padding-left: 24px;
+
+    &::placeholder {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #a0a3bd;
+    }
+}
+
+.BtnSubmit {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: 134px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.DecorLeft {
+    position: absolute;
+    top: 68px;
+    left: 80px;
+    width: 278px;
+    height: 278px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #181876;
+    border: 1px solid #4c4cba;
+    border-radius: 139px 139px 139px 0px;
+}
+
+.DecorRight {
+    position: absolute;
+    bottom: 100px;
+    right: 80px;
+    width: 218px;
+    height: 218px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4545b1;
+    border: 1px solid #5a5ac9;
+    border-radius: 109px 109px 109px 0px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .DecorLeft {
+        top: 68px;
+        left: 236px;
+    }
+
+    .DecorRight {
+        bottom: 100px;
+        right: 236px;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Inner {
+        width: 100%;
+    }
+
+    .Title {
+        max-width: 448px;
+        font-size: 20px;
+        line-height: 26px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Field {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .BtnSubmit {
+        min-height: 44px;
+    }
+
+    .DecorLeft {
+        top: 62px;
+        left: 40px;
+        width: 188px;
+        height: 188px;
+
+        svg {
+            width: 67px;
+            height: 46px;
+        }
+    }
+
+    .DecorRight {
+        width: 188px;
+        height: 188px;
+        bottom: 62px;
+        right: 40px;
+
+        svg {
+            width: 60px;
+            height: 62px;
+        }
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Section {
+        min-height: 670px;
+    }
+
+    .Inner {
+        width: 100%;
+    }
+
+    .Title {
+        max-width: 448px;
+        font-size: 20px;
+        line-height: 26px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Field {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .BtnSubmit {
+        min-height: 44px;
+    }
+
+    .DecorLeft {
+        top: 40px;
+        left: 40px;
+        width: 160px;
+        height: 160px;
+
+        svg {
+            width: 67px;
+            height: 46px;
+        }
+    }
+
+    .DecorRight {
+        width: 160px;
+        height: 160px;
+        bottom: 40px;
+        right: 40px;
+
+        svg {
+            width: 60px;
+            height: 62px;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Section {
+        min-height: 620px;
+    }
+
+    .Inner {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .Title {
+        max-width: 226px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 18px;
+    }
+
+    .Field {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        background-color: transparent;
+        border: none;
+        overflow: visible;
+    }
+
+    .Input {
+        height: 48px;
+        background: #fff;
+        border: 1px solid #d9dbe9;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 8px;
+        padding-left: 20px;
+    }
+
+    .BtnSubmit {
+        height: 50px;
+        width: 100%;
+        position: static;
+        transform: none;
+        left: auto;
+        top: auto;
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    .DecorLeft {
+        top: 40px;
+        left: 30px;
+        width: 128px;
+        height: 128px;
+
+        svg {
+            width: 46px;
+            height: 32px;
+        }
+    }
+
+    .DecorRight {
+        width: 128px;
+        height: 128px;
+        bottom: 40px;
+        right: 30px;
+
+        svg {
+            width: 40px;
+            height: 36px;
+        }
+    }
+}

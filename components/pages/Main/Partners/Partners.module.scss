@@ -1,0 +1,343 @@
+@import '../../../../css/common.scss';
+
+.Section {
+    padding: 134px 0;
+}
+
+.Inner {
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(83.54deg, #02025a -14.06%, #5757c9 109.2%);
+    border-radius: 60px;
+    padding: 116px 0;
+    margin: 0 auto;
+}
+
+.Left {
+    padding-left: 250px;
+    margin-right: 122px;
+}
+
+.CircleWrap {
+    position: relative;
+    z-index: 2;
+    width: 294px;
+    height: 294px;
+}
+
+.Circle {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #4c4cba;
+
+    svg {
+        path {
+            fill: #fff;
+        }
+    }
+}
+
+.CircleDecorOne,
+.CircleDecorTwo,
+.CircleDecorThree {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.CircleDecorOne {
+    z-index: 3;
+    width: 260px;
+    height: 260px;
+    background: #181876;
+    border: 1px solid #4c4cba;
+    left: -42px;
+}
+
+.CircleDecorTwo {
+    z-index: 2;
+    width: 224px;
+    height: 224px;
+    background: #181876;
+    border: 1px solid #4c4cba;
+    left: -84px;
+}
+
+.CircleDecorThree {
+    z-index: 1;
+    width: 196px;
+    height: 196px;
+    background: #181876;
+    border: 1px solid #4c4cba;
+    left: -114px;
+}
+
+.Right {
+    width: 100%;
+    max-width: 474px;
+}
+
+.Title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.Text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #fff;
+    margin-bottom: 40px;
+
+    p {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.Control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .BtnLogin {
+        min-width: 172px;
+        margin-right: 20px;
+    }
+
+    .BtnConnection {
+        min-width: 172px;
+    }
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .Inner {
+        max-width: 1446px;
+        padding-top: 146px;
+        padding-bottom: 126px;
+    }
+
+    .Left {
+        padding-left: 285px;
+        margin-right: 156px;
+    }
+
+    .Right {
+        max-width: 540px;
+        margin-top: -16px;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Section {
+        padding: 80px 62px;
+    }
+
+    .Inner {
+        padding: 102px 0;
+    }
+
+    .Left {
+        padding-left: 160px;
+        margin-right: 66px;
+    }
+
+    .CircleWrap {
+        width: 214px;
+        height: 214px;
+    }
+
+    .CircleDecorOne {
+        width: 188px;
+        height: 188px;
+        left: -30px;
+    }
+
+    .CircleDecorTwo {
+        width: 162px;
+        height: 162px;
+        left: -60px;
+    }
+
+    .CircleDecorThree {
+        width: 142px;
+        height: 142px;
+        left: -82px;
+    }
+
+    .Right {
+        max-width: 384px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Section {
+        padding: 0;
+    }
+
+    .Inner {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0;
+        padding: 98px 0;
+    }
+
+    .Left {
+        padding-left: 82px;
+        margin-right: 0;
+        margin-bottom: 66px;
+    }
+
+    .Circle {
+        svg {
+            width: 94px;
+            height: 45px;
+        }
+    }
+
+    .CircleWrap {
+        width: 214px;
+        height: 214px;
+    }
+
+    .CircleDecorOne {
+        width: 188px;
+        height: 188px;
+        left: -30px;
+        background-color: #28288b;
+    }
+
+    .CircleDecorTwo {
+        width: 162px;
+        height: 162px;
+        left: -60px;
+        background-color: #28288b;
+    }
+
+    .CircleDecorThree {
+        width: 142px;
+        height: 142px;
+        left: -82px;
+        background-color: #28288b;
+    }
+
+    .Right {
+        max-width: 384px;
+        text-align: center;
+    }
+
+    .Control {
+        justify-content: center;
+
+        .BtnLogin {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        .BtnConnection {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Section {
+        padding: 0;
+    }
+
+    .Inner {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0;
+        padding: 48px 30px;
+    }
+
+    .Left {
+        padding-left: 60px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .Circle {
+        svg {
+            width: 70px;
+            height: 34px;
+        }
+    }
+
+    .CircleWrap {
+        width: 158px;
+        height: 158px;
+    }
+
+    .CircleDecorOne {
+        width: 140px;
+        height: 140px;
+        left: -22px;
+        background-color: #28288b;
+    }
+
+    .CircleDecorTwo {
+        width: 120px;
+        height: 120px;
+        left: -46px;
+        background-color: #28288b;
+    }
+
+    .CircleDecorThree {
+        width: 106px;
+        height: 106px;
+        left: -60px;
+        background-color: #28288b;
+    }
+
+    .Right {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .Title {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 18px;
+    }
+
+    .Text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .Control {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .BtnLogin {
+            height: 50px;
+            min-width: 238px;
+            margin-right: 0;
+        }
+
+        .BtnConnection {
+            order: -1;
+            height: 50px;
+            min-width: 238px;
+            margin-bottom: 10px;
+        }
+    }
+}

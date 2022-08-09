@@ -1,0 +1,214 @@
+@import '../../../../css/common.scss';
+
+.Section {
+    padding: 130px 0;
+    border-bottom: 1px solid #d9dbe9;
+}
+
+.Title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    color: #14142b;
+    margin-bottom: 80px;
+}
+
+.Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Item {
+    position: relative;
+    padding: 0 94px;
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 20px;
+    }
+
+    &:not(:last-child) {
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 172px;
+            width: 1px;
+            background-color: #eff0f6;
+        }
+    }
+}
+
+.Itemicon {
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
+}
+
+.ItemTitle {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 19px;
+    text-align: center;
+    color: #14142b;
+    margin-bottom: 16px;
+}
+
+.ItemText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #14142b;
+
+    br {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .Item {
+        padding: 0 128px;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Section {
+        padding: 80px 0;
+    }
+
+    .Title {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 70px;
+    }
+
+    .Item {
+        padding: 0 54px;
+    }
+
+    .ItemText {
+        br {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Section {
+        padding: 80px 0;
+    }
+
+    .Title {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 92px;
+    }
+
+    .Item {
+        padding: 0 36px;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    .Itemicon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .ItemTitle {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    .ItemText {
+        max-width: 180px;
+        font-size: 14px;
+        line-height: 21px;
+
+        br {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Section {
+        padding-top: 50px;
+        padding-bottom: 0;
+        margin-bottom: 50px;
+        border-bottom: none;
+    }
+
+    .Title {
+        font-size: 33px;
+        line-height: 33px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .Items {
+        flex-direction: column;
+    }
+
+    .Item {
+        padding-left: 0;
+        padding-right: 0;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: auto;
+                bottom: 0;
+                transform: none;
+                height: 1px;
+                width: 100%;
+                background-color: #eff0f6;
+            }
+        }
+    }
+
+    .Itemicon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .ItemTitle {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    .ItemText {
+        max-width: 235px;
+        font-size: 14px;
+        line-height: 21px;
+
+        br {
+            display: none;
+        }
+    }
+}

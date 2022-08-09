@@ -1,0 +1,103 @@
+.Section{
+    padding-bottom: 100px;
+}
+
+.Image{
+    margin-bottom: 100px;
+}
+
+.Wrapper{
+    position: relative;
+    padding-left: 298px;
+    padding-right: 189px;
+}
+
+.Row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 63px;
+
+    h3{
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 100%;
+        color: #14142B;
+        max-width: 411px;
+    }
+
+    .Text{
+        max-width: 407px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 170%;
+            color: #14142B;
+        }
+    }
+}
+
+.RowTwo{
+    display: flex;
+    justify-content: space-between;
+
+    .Left{
+        max-width: 406px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .Item{
+            padding-bottom: 30px;
+            border-bottom: 1px solid #D9DBE9;
+            &:last-child{
+                padding-bottom: 0;
+                border-bottom: 0px solid #D9DBE9;
+            }
+
+            .Number{
+                font-weight: 600;
+                font-size: 70px;
+                line-height: 100%;
+                color: #F9365E;
+                margin-bottom: 3px;
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                color: #14142B;
+            }
+        }
+    }
+
+    .Right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F7F7FC;
+        max-width: 407px;
+        width: 100%;
+        height: 385px;
+
+        .Block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+
+            .Btn{
+                min-width: 234px;
+                max-width: 234px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 100%;
+            }
+        }
+    }
+}

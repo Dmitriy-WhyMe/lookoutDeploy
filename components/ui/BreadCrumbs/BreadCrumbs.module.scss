@@ -1,0 +1,64 @@
+@import '../../../css/common.scss';
+
+.BreadCrumbs {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    margin-bottom: 50px;
+
+    span {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 170%;
+        color: #14142B;
+        white-space: nowrap;
+    }
+
+    a {
+        position: relative;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 170%;
+        color: #A0A3BD;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: all 0.2s ease;
+        margin-right: 20px;
+
+        &::after {
+            content: '/';
+            position: absolute;
+            width: 5px;
+            height: 10px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            right: -12px;
+            top: 5px;
+            transform: translateY(-50%);
+        }
+
+        &:hover {
+            color: lighten(#A0A3BD, 10%);
+        }
+    }
+}
+
+.Row {
+    display: inline-flex;
+    align-items: center;
+}
+
+.BtnPrev {
+    display: none;
+}
+
+@media only screen and (min-width: $desktopWide) {
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+}
+
+@media only screen and (max-width: $mobile) {}

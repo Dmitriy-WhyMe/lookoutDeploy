@@ -1,0 +1,87 @@
+@import '../../../../../css/common.scss';
+
+.Header{
+    width: 100%;
+    border-bottom: 1px solid #D9DBE9;
+    margin-bottom: 46px;
+}
+
+.HeaderInner{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.HeaderBtn{
+    padding: 0 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    color: #A0A3BD;
+    padding-bottom: 9px;
+    border-bottom: 1px solid white;
+    transition: all 0.2s ease;
+    &.Active {
+        color: #f9365e;
+        font-weight: 700;
+        border-bottom: 1px solid #f9365e;
+    }
+}
+
+.Items{
+    display: flex;
+    gap: 10px;
+}
+
+.Select{
+    &:nth-child(1){
+        width: 170px;
+    }
+    &:nth-child(2){
+        width: 150px;
+    }
+    &:nth-child(3){
+        width: 143px;
+    }
+    &:nth-child(4){
+        width: 143px;
+    }
+    &:nth-child(5){
+        width: 166px;
+    }
+    &:nth-child(6){
+        width: 241px;
+    }
+}
+
+.SelectBtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    color: #A0A3BD;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    height: 52px;
+    border: 1px solid #D9DBE9;
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.SelectDropdown {
+    position: relative;
+    z-index: 2;
+
+    display: none;
+
+    &.Open {
+        width: inherit;
+        position: absolute;
+        display: block;
+        background-color: aqua;
+    }
+}

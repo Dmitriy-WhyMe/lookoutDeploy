@@ -1,0 +1,116 @@
+@import '../../../../css/common.scss';
+
+.Wrapper {
+    width: 100%;
+    max-width: 1280px;
+    min-height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+}
+
+.Col {
+    display: flex;
+    align-items: center;
+}
+
+.Link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #14142b;
+    text-decoration: none;
+
+    &:not(:last-child) {
+        margin-right: 26px;
+    }
+}
+
+.Favourites {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.FavouritesTitle {
+    font-size: 13px;
+    line-height: 13px;
+    color: #a0a3bd;
+    margin-right: 6px;
+}
+
+.FavouritesCount {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #f9365e;
+}
+
+.BtnSearch {
+    min-width: 200px;
+
+    svg{
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .Wrapper {
+        max-width: 1446px;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Wrapper {
+        min-height: 84px;
+        padding: 0 62px;
+    }
+
+    .Link {
+        font-size: 14px;
+        line-height: 14px;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    .Favourites {
+        margin-right: 20px;
+    }
+
+    .FavouritesTitle {
+        display: none;
+    }
+
+    .BtnSearch {
+        min-width: auto;
+        width: 50px;
+        height: 50px;
+        font-size: 0;
+        line-height: 0;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Wrapper {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Wrapper {
+        display: none;
+    }
+}

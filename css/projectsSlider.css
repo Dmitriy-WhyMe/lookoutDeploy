@@ -1,0 +1,31 @@
+#projects-slider .swiper-container {
+    overflow: visible !important;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects-slider .swiper-wrapper {
+    margin-bottom: 30px;
+    order: 1;
+}
+
+#projects-slider .swiper-pagination {
+    position: static;
+    order: 2;
+    line-height: 0;
+}
+
+#projects-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+
+    background-color: #c6cae2;
+    opacity: 1;
+}
+
+#projects-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #f9365e;
+    width: 16px;
+    border-radius: 100px;
+}

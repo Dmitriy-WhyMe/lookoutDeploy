@@ -1,0 +1,97 @@
+@import '../../../../css/common.scss';
+
+.Section {
+    background-color: #fcfcfc;
+    padding: 100px 0;
+    padding-bottom: 92px;
+}
+
+.Title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #14142b;
+    margin-bottom: 50px;
+}
+
+.Inner {
+    overflow: hidden;
+}
+
+.Slide {
+    height: 235px;
+    background: #fff;
+    box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.04);
+    border-radius: 10px;
+}
+
+.Logo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: $desktopWide) {
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Section {
+        padding: 80px 0;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Section {
+        padding: 80px 0;
+        padding-bottom: 60px;
+    }
+
+    .Title {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .Slide {
+        height: 198px;
+    }
+
+    .Logo {
+        padding: 0 32px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Section {
+        padding: 50px 0;
+        padding-bottom: 50px;
+    }
+
+    .Title {
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+
+    .Inner {
+        overflow: visible;
+    }
+
+    .Slide {
+        width: 100%;
+        max-width: 210px;
+        height: 198px;
+    }
+
+    .Logo {
+        padding: 0 32px;
+    }
+}

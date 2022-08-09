@@ -1,0 +1,224 @@
+@import '../../../../css/common.scss';
+
+.Section {
+    padding: 130px 0;
+}
+
+.Title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    color: #14142b;
+    margin-bottom: 50px;
+}
+
+.ItemImageBlock {
+    position: relative;
+    height: 558px;
+    border-radius: 40px;
+    margin-bottom: 80px;
+}
+
+.ItemImage {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.ItemImageCopy {
+    position: absolute;
+    left: -30px;
+    top: 30px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d9dbe9;
+    border-radius: 40px;
+}
+
+.Content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SubTitle {
+    max-width: 300px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #14142b;
+}
+
+.Right {
+    width: 100%;
+    max-width: 558px;
+}
+
+.Text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #14142b;
+    margin-bottom: 42px;
+
+    p {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.BtnDetail {
+    min-width: 150px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #02025a;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .ItemImageBlock {
+        height: 630px;
+    }
+
+    .Right {
+        max-width: 695px;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Section {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+
+    .Title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .ItemImageBlock {
+        position: relative;
+        height: 476px;
+        margin-bottom: 86px;
+        border-radius: 34px;
+    }
+
+    .ItemImage {
+        border-radius: 34px;
+    }
+
+    .ItemImageCopy {
+        left: -26px;
+        top: 26px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .Title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .ItemImageBlock {
+        position: relative;
+        height: 350px;
+        margin-bottom: 70px;
+        border-radius: 25px;
+    }
+
+    .ItemImage {
+        border-radius: 25px;
+    }
+
+    .ItemImageCopy {
+        left: -20px;
+        top: 20px;
+    }
+
+    .Content {
+        flex-direction: column;
+    }
+
+    .Right {
+        max-width: 100%;
+    }
+
+    .SubTitle {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Section {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+
+    .Title {
+        font-size: 33px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+
+    .ItemImageBlock {
+        position: relative;
+        height: 196px;
+        margin-bottom: 32px;
+        border-radius: 11px;
+    }
+
+    .ItemImage {
+        border-radius: 11px;
+
+        img {
+            border-radius: 11px;
+        }
+    }
+
+    .ItemImageCopy {
+        left: -10px;
+        top: 10px;
+        border-radius: 11px;
+    }
+
+    .Content {
+        flex-direction: column;
+    }
+
+    .Right {
+        max-width: 100%;
+    }
+
+    .Text {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 18px;
+    }
+
+    .SubTitle {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 18px;
+    }
+
+    .BtnDetail {
+        width: 100%;
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}

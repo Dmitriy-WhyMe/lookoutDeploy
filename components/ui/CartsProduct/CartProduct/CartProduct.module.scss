@@ -1,0 +1,174 @@
+.Item{
+    max-width: 32%;
+    border-radius: 10px;
+    background: white;
+    padding-bottom: 20px;
+
+    .ImgBlock{
+        margin-bottom: 20px;
+        position: relative;
+
+        &::after{
+            content: '';
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            width: 100%;
+            height: 99%;
+            border-radius: 10px 10px 0px 0px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.2s ease;
+        }
+
+        &:hover{
+            &::after{
+                opacity: 1;
+            }
+            .Call{
+                z-index: 2;
+                opacity: 1;
+            }
+        }
+
+        .Favourites{
+            transition: all 0.2s ease;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.6);
+            cursor: pointer;
+            z-index: 3;
+            &:hover{
+                background: #F9365E;
+            }
+        }
+
+        .Call{
+            transition: all 0.2s ease;
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #FFFFFF;
+            border-radius: 10px;
+            max-width: 141px;
+            height: 48px;
+            background: inherit;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            color: #FFFFFF;
+            cursor: pointer;
+
+        }
+
+        .ItemImage{
+            border-radius: 10px 10px 0px 0px;
+            max-width: 342px;
+        }
+    }
+
+    .Content{
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .Bonus{
+            max-width: fit-content;
+            background: #F4F4FF;
+            font-weight: 700;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 100%;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #2A00A2;
+            margin-bottom: 15px;
+        }
+
+        .Title{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+            color: #14142B;
+            margin-bottom: 20px;
+        }
+
+        .Id, .Type, .Area, .Terrace, .Section{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 170%;
+            color: #A0A3BD;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            b{
+                font-weight: 600;
+                color: #14142B;
+            }
+        }
+    }
+
+    .Row{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        .Flex{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            .Price{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 170%;
+                width: -webkit-fill-available;
+                color: #14142B;
+            }
+
+            button{
+                max-width: 74px;
+                min-width: 74px;
+        
+                span{
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 170%;
+                    color: #14142A;
+                }
+            }
+        }
+
+        a{
+            width: 42px;
+            height: 42px;
+            border-radius: 100%;
+            background: inherit;
+            border: 2px solid #D9DBE9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    
+}

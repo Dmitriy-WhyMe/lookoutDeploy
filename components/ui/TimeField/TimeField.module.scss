@@ -1,0 +1,99 @@
+@import '../../../css/common.scss';
+
+.Field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input[type='time']::-webkit-calendar-picker-indicator {
+        background: none;
+    }
+}
+
+.Label {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(#6e6259, 0.6);
+    pointer-events: none;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+.Time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.TimeItem {
+    position: relative;
+    width: 158px;
+    border-bottom: 1px solid rgba(#6e6259, 0.3);
+
+    input {
+        border: none;
+        color: rgba(#6e6259, 0.6);
+        padding: 0 0 6px 0;
+    }
+
+    &:first-child {
+        margin-right: 30px;
+    }
+
+    svg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0.5;
+        width: 14px;
+        height: 12px;
+    }
+}
+
+@media only screen and (min-width: $desktopWide) {
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .TimeItem {
+        width: 136px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .TimeItem {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Label {
+        left: 0;
+        top: -2px;
+        font-size: 13px;
+    }
+
+    .Time {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 32px;
+    }
+
+    .TimeItem {
+        width: 100%;
+
+        input {
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        &:first-child {
+            margin-right: 26px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../../css/common.scss';
+
+.TextField {
+    margin-bottom: 25px;
+}
+
+.Info {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000;
+    margin: 40px 0;
+}
+
+.Policy {
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #000;
+    opacity: 0.5;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: $desktopWide) {
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+}
+
+@media only screen and (max-width: $mobile) {
+    .Info {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Policy {
+        font-size: 10px;
+        line-height: 14px;
+        margin-bottom: 20px;
+    }
+}

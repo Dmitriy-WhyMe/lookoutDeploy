@@ -1,0 +1,33 @@
+{
+    "name": "lookout",
+    "private": true,
+    "scripts": {
+        "dev": "next dev -p 4200",
+        "build": "next build",
+        "start": "next start -p 4200",
+        "lint": "next lint",
+        "pm2": "pm2"
+    },
+    "dependencies": {
+        "animejs": "^3.2.1",
+        "axios": "^0.24.0",
+        "classnames": "^2.3.1",
+        "gsap": "^3.9.0",
+        "next": "^12.1.2",
+        "rc-slider": "^10.0.1",
+        "react": "17.0.2",
+        "react-collapsible": "^2.10.0",
+        "react-dom": "17.0.2",
+        "react-flatpickr": "^3.10.13",
+        "react-gsap": "^3.2.1",
+        "react-input-mask": "^2.0.4",
+        "react-intersection-observer": "^8.34.0",
+        "react-transition-group": "^4.4.2",
+        "sass": "^1.44.0",
+        "swiper": "^6.7.5"
+    },
+    "devDependencies": {
+        "eslint": "7",
+        "eslint-config-next": "^12.0.4"
+    }
+}

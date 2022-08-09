@@ -1,0 +1,147 @@
+@import '../../../../css/common.scss';
+
+.Section {
+    background-color: #fcfcfc;
+}
+
+.ItemImage {
+    position: relative;
+    height: 700px;
+}
+
+.Inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.Title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    color: #14142b;
+}
+
+.Content {
+    width: 100%;
+    max-width: 558px;
+    padding-left: 42px;
+}
+
+.Subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #14142b;
+    margin-bottom: 30px;
+}
+
+.Text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #14142b;
+    margin-bottom: 42px;
+
+    p {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .ItemImage {
+        height: 800px;
+    }
+
+    .Content {
+        max-width: 654px;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .ItemImage {
+        height: 580px;
+    }
+
+    .Inner {
+        align-items: flex-start;
+        padding: 80px 0;
+    }
+
+    .Title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .Content {
+        max-width: 594px;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .ItemImage {
+        height: 580px;
+    }
+
+    .Inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 0;
+    }
+
+    .Title {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 60px;
+    }
+
+    .Content {
+        max-width: 100%;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .ItemImage {
+        height: 540px;
+    }
+
+    .Inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px 0;
+    }
+
+    .Title {
+        font-size: 33px;
+        line-height: 33px;
+        margin-bottom: 40px;
+    }
+
+    .Content {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .Subtitle {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 18px;
+    }
+
+    .Text {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 18px;
+    }
+
+    .BtnDetail {
+        min-width: none;
+        width: 100%;
+    }
+}

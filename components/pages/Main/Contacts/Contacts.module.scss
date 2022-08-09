@@ -1,0 +1,256 @@
+@import '../../../../css/common.scss';
+
+.Section {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.Row {
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+        margin-bottom: 88px;
+    }
+}
+
+.Title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    color: #14142b;
+    margin-top: 34px;
+}
+
+.Content {
+    width: 100%;
+    max-width: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Phone {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #14142b;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.Email {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    line-height: 27px;
+    color: #14142b;
+    text-decoration: none;
+    margin-bottom: 16px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        width: 100%;
+        height: 1px;
+        background-color: #14142b;
+    }
+}
+
+.Addres {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #14142b;
+}
+
+.ImageBlock {
+    position: relative;
+    flex-shrink: 0;
+    width: 407px;
+    height: 532px;
+    border-radius: 60px;
+    margin-top: 38px;
+}
+
+.Image {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    border-radius: 60px;
+
+    img {
+        border-radius: 60px;
+    }
+}
+
+.ItemImageCopy {
+    position: absolute;
+    z-index: 1;
+    left: -30px;
+    top: 30px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d9dbe9;
+    border-radius: 60px;
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .Content {
+        max-width: 585px;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Section {
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+
+    .Row {
+        &:last-child {
+            align-items: center;
+        }
+    }
+
+    .Title {
+        font-size: 60px;
+        line-height: 60px;
+        margin-top: 40px;
+    }
+
+    .Content {
+        max-width: 518px;
+    }
+
+    .ImageBlock {
+        width: 310px;
+        height: 406px;
+        margin-top: -34px;
+        border-radius: 45px;
+    }
+
+    .Image {
+        border-radius: 45px;
+
+        img {
+            border-radius: 45px;
+        }
+    }
+
+    .ItemImageCopy {
+        border-radius: 45px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Section {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .Row {
+        flex-direction: column;
+
+        &:first-child {
+            margin-bottom: 50px;
+        }
+    }
+
+    .Title {
+        font-size: 50px;
+        line-height: 50px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .Content {
+        max-width: 100%;
+    }
+
+    .ImageBlock {
+        width: 100%;
+        height: 406px;
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+
+    .Addres {
+        br {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Section {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .Row {
+        flex-direction: column;
+
+        &:first-child {
+            margin-bottom: 40px;
+        }
+    }
+
+    .Title {
+        font-size: 33px;
+        line-height: 33px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .Content {
+        max-width: 100%;
+    }
+
+    .Phone {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .Email {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .Addres {
+        font-size: 16px;
+        line-height: 24px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .ImageBlock {
+        width: 100%;
+        height: 196px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .Image {
+        border-radius: 11px;
+
+        img {
+            border-radius: 11px;
+        }
+    }
+
+    .ItemImageCopy {
+        left: -10px;
+        top: 10px;
+        border-radius: 11px;
+    }
+}

@@ -1,0 +1,104 @@
+@import '../../../css/common.scss';
+
+.Item {
+    width: 100%;
+    max-width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:first-child {
+        margin-right: 18px;
+    }
+}
+
+.ItemImage {
+    position: relative;
+    height: 236px;
+}
+
+.ItemContent {
+    background-color: #f7f7fc;
+    padding: 30px 30px 22px 30px;
+}
+
+.ItemName {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #14142b;
+    margin-bottom: 38px;
+}
+
+.ItemFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ItemLots {
+    display: flex;
+    align-items: center;
+
+    b {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 50px;
+        color: #f9365e;
+        margin-right: 8px;
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 15px;
+        color: #14142b;
+    }
+}
+
+.ItemLink {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid #d9dbe9;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .ItemName {
+        margin-bottom: 82px;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+}
+
+@media only screen and (max-width: $mobile) {
+    .Item {
+        width: 100%;
+        max-width: none;
+    }
+
+    .ItemContent {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .ItemName {
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 52px;
+    }
+    .ItemLots {
+        b {
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+}

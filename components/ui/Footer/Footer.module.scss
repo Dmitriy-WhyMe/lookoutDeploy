@@ -1,0 +1,436 @@
+@import '../../../css/common.scss';
+
+.Footer {
+    padding-bottom: 100px;
+}
+
+.Inner {
+    border-top: 1px solid #d9dbe9;
+    padding-top: 100px;
+}
+
+.Row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:first-child {
+        margin-bottom: 68px;
+    }
+
+    &:last-child {
+        align-items: flex-start;
+
+        .Col {
+            &:first-child {
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+.Col {
+    min-width: 162px;
+
+    &.Center {
+        width: 100%;
+        max-width: 570px;
+        margin-left: -56px;
+    }
+}
+
+.Logo {
+    margin-bottom: 28px;
+}
+
+.Copy {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #a0a3bd;
+}
+
+.Menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MenuCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.MenuLink {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #14142b;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.Phone {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #14142b;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.BtnCall {
+    height: 50px;
+    min-width: 162px;
+}
+
+.Author {
+    p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #a0a3bd;
+        margin-bottom: 8px;
+    }
+}
+
+.Subscribe {
+    width: 100%;
+}
+
+.SubscribeTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #a0a3bd;
+    margin-bottom: 30px;
+}
+
+.SubscribeField {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #d9dbe9;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.SubscribeInput {
+    border: none;
+
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #a0a3bd;
+    padding-left: 18px;
+
+    &::placeholder {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 15px;
+        color: #a0a3bd;
+    }
+}
+
+.SubscribeBtnSubmit {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    min-height: 35px;
+    min-width: 128px;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.SocialTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #a0a3bd;
+    margin-bottom: 25px;
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .Col {
+        &.Center {
+            max-width: 642px;
+            margin-left: -40px;
+        }
+    }
+
+    .Phone {
+        margin-top: 16px;
+    }
+
+    .SocialTitle {
+        margin-bottom: 38px;
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Footer {
+        padding-bottom: 80px;
+    }
+
+    .Inner {
+        padding-top: 80px;
+    }
+
+    .Row {
+        &:first-child {
+            margin-bottom: 54px;
+        }
+    }
+
+    .Col {
+        &.Center {
+            max-width: 496px;
+            margin-left: -34px;
+        }
+    }
+
+    .Phone {
+        margin-top: 16px;
+    }
+
+    .BtnCall {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .SubscribeTitle {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Footer {
+        position: relative;
+    }
+
+    .Row {
+        &:first-child {
+            margin-bottom: 56px;
+
+            .Col {
+                &:last-child {
+                    position: absolute;
+                    right: 54px;
+                    bottom: 0;
+                }
+            }
+        }
+
+        &:last-child {
+            align-items: flex-start;
+
+            .Col {
+                &:first-child {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 0;
+                }
+
+                &:last-child {
+                    position: absolute;
+                    left: 54px;
+                    bottom: 0;
+                }
+
+                &.Center {
+                    max-width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .Col {
+        &.Center {
+            max-width: 455px;
+            margin-left: 0;
+        }
+    }
+
+    .BtnCall {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .Author {
+        text-align: center;
+
+        p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .Subscribe {
+        margin-bottom: 48px; // 148
+    }
+
+    .SubscribeTitle {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 25px;
+    }
+
+    .SocialTitle {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Footer {
+        position: relative;
+        padding-bottom: 142px;
+    }
+
+    .Inner {
+        padding-top: 60px;
+    }
+
+    .Logo {
+        margin-bottom: 15px;
+    }
+
+    .Row {
+        flex-direction: column;
+
+        &:first-child {
+            margin-bottom: 40px;
+
+            .Col {
+                &:first-child {
+                    order: 1;
+                    margin-bottom: 40px;
+                }
+
+                &:nth-child(2) {
+                    order: 3;
+                }
+
+                &:nth-child(3) {
+                    order: 2;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        &:last-child {
+            align-items: flex-start;
+
+            .Col {
+                &:first-child {
+                    position: absolute;
+                    bottom: 60px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                &.Center {
+                    max-width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .Col {
+        min-width: 100%;
+        text-align: center;
+
+        &.Center {
+            max-width: 455px;
+            margin-left: 0;
+        }
+    }
+
+    .Menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .MenuCol {
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+    }
+
+    .MenuLink {
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+    }
+
+    .BtnCall {
+        font-size: 16px;
+        line-height: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Author {
+        text-align: center;
+
+        p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .Subscribe {
+        margin-bottom: 40px;
+    }
+
+    .SubscribeTitle {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 25px;
+    }
+
+    .SocialTitle {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .SubscribeField {
+        background-color: transparent;
+        overflow: visible;
+        height: auto;
+        border: none;
+    }
+
+    .SubscribeInput {
+        height: 48px;
+        background: #fff;
+        border: 1px solid #d9dbe9;
+        border-radius: 10px;
+        margin-bottom: 8px;
+        padding-left: 20px;
+    }
+
+    .SubscribeBtnSubmit {
+        position: static;
+        transform: none;
+        width: 100%;
+        min-height: 50px;
+    }
+
+    .SocialWrap {
+        justify-content: center;
+    }
+}

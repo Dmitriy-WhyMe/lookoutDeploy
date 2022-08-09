@@ -1,0 +1,61 @@
+@import '../../../css/common.scss';
+
+.Button {
+    min-width: 172px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    background-color: #02025a;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: lighten(#02025a, 10%);
+    }
+
+    &.White {
+        background-color: #fff;
+        color: #02025a;
+    }
+
+    &.Outline {
+        background-color: transparent;
+        border-color: #d9dbe9;
+        color: #02025a;
+
+        &.White {
+            background-color: transparent;
+            border-color: #fff;
+        }
+    }
+}
+
+@media only screen and (min-width: $desktopWide) {
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Button {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Button {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Button {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}

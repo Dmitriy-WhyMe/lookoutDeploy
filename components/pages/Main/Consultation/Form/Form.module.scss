@@ -1,0 +1,89 @@
+@import '../../../../css/../../css/common.scss';
+
+.Form {
+    width: 100%;
+    max-width: 510px;
+}
+
+.Title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+    color: #14142b;
+    margin-bottom: 45px;
+}
+
+.TextField {
+    margin-bottom: 20px;
+}
+
+.TextArea {
+    margin-bottom: 52px;
+}
+
+.Control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.BtnSend {
+    min-width: 146px;
+    height: 56px;
+}
+
+@media only screen and (min-width: $desktopWide) {
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .Form {
+        max-width: 518px;
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Title {
+        text-align: center;
+    }
+
+    .BtnSend {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Title {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .BtnSend {
+        height: 54px;
+        width: 100%;
+        min-width: none;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .TextArea {
+        margin-bottom: 24px;
+    }
+
+    .Control {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .Consent {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+}

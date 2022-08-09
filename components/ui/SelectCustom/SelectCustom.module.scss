@@ -1,0 +1,151 @@
+@import '../../../css/common.scss';
+
+.Wrapper {
+    position: relative;
+}
+
+.Btn {
+    position: relative;
+    min-width: 112px;
+    max-width: 112px;
+
+    height: 38px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d9dbe9;
+    border-radius: 6px;
+    padding: 0 14px;
+
+    svg {
+        position: absolute;
+        right: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.BtnText {
+    max-width: 64px;
+    overflow: hidden;
+}
+
+.Placeholder {
+}
+
+.Dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+
+    border: 1px solid #d9dbe9;
+    background-color: aquamarine;
+}
+
+.DropdownList {
+    list-style: none;
+}
+
+.DropdownItem {
+}
+
+.DropdownBrn {
+    width: 100%;
+    text-align: left;
+}
+
+@media only screen and (min-width: $desktopWide) {
+    .Wrapper {
+    }
+
+    .Btn {
+    }
+
+    .Placeholder {
+    }
+
+    .Dropdown {
+    }
+
+    .DropdownList {
+    }
+
+    .DropdownItem {
+    }
+
+    .DropdownBrn {
+    }
+}
+
+@media only screen and (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) {
+    .Wrapper {
+    }
+
+    .Btn {
+    }
+
+    .Placeholder {
+    }
+
+    .Dropdown {
+    }
+
+    .DropdownList {
+    }
+
+    .DropdownItem {
+    }
+
+    .DropdownBrn {
+    }
+}
+
+@media only screen and (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) {
+    .Wrapper {
+    }
+
+    .Btn {
+    }
+
+    .Placeholder {
+    }
+
+    .Dropdown {
+    }
+
+    .DropdownList {
+    }
+
+    .DropdownItem {
+    }
+
+    .DropdownBrn {
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .Wrapper {
+    }
+
+    .Btn {
+    }
+
+    .Placeholder {
+    }
+
+    .Dropdown {
+    }
+
+    .DropdownList {
+    }
+
+    .DropdownItem {
+    }
+
+    .DropdownBrn {
+    }
+}

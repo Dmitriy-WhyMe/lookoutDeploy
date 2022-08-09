@@ -1,0 +1,74 @@
+.Section{
+    background: #02025A;
+    height: 530px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Image{
+    z-index: 2;
+    max-width: 1144px;
+    height: 537px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: -195px;
+
+    span{
+        height: 537px !important;
+    }
+}
+
+.Text{
+    position: absolute;
+    z-index: 2;
+    top: 165px;
+    max-width: 339px;
+    right: 306px;
+    
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 170%;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: inherit;
+        width: 100%;
+        max-width: 173px;
+        height: 56px;
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        color: #FFFFFF;
+    }
+}
+
+.Title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+.DecorOne{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.DecorTwo{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}

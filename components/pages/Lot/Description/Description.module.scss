@@ -1,0 +1,20 @@
+.Content{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid #D9DBE9;
+    border-bottom: 1px solid #D9DBE9;
+}
+
+.Row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Description {
+    margin-bottom: 100px;
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #14142B;
+}
