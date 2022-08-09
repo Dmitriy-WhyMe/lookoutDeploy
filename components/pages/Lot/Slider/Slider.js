@@ -32,6 +32,7 @@ const Slider = () => {
         loop: true,
 		navigation: false,
         speed: 1000,
+        allowTouchMove: false,
 	}
 
     return (
